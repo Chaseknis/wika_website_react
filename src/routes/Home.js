@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="home">
+    <section id="home" className="home">
       <video ref={videoRef} src={videoBg5} className="bgVideo" autoPlay loop muted>
         <track kind="captions" srcLang="en" label="English" />
       </video>

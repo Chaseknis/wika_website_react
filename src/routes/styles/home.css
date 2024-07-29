@@ -64,3 +64,41 @@ h2 {
     -webkit-text-fill-color: transparent;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .home_title {
+    font-size: 4.5rem; 
+    margin: 6rem 0;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .header_container {
+    flex-direction: column;
+  }
+  .home_title {
+    font-size: 4.5rem; 
+    margin: 0 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home_image {
+    max-width: 230px;
+    max-height: 230px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav_menu ul {
+    column-gap: 0;
+  }
+
+  nav {
+    padding: 0 1rem;
+  }
+}

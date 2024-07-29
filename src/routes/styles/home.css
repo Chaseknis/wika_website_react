@@ -13,7 +13,7 @@
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: -1; /* Ensure this is behind other elements */
 }
 
 .overlay {
@@ -23,5 +23,44 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(-25deg, rgba(53, 44, 20, 0.7) 0%, rgba(37, 31, 10, 0.9) 100%);
-  z-index: 0;
+  z-index: 0; /* Ensure this is behind text */
+}
+
+.header_container {
+  position: relative; /* Make sure this is positioned relative for z-index to work */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0 5%;
+  z-index: 1; /* Place this above the overlay */
+}
+
+.half_two_wrapper {
+  width: 100%;
+}
+
+.home_title {
+  display: flex;
+  align-items: center;
+  z-index: 2; /* Place this above the header_container */
+  color: rgb(134, 113, 73); /* Adjust the color as needed */
+  font-size: 6.5rem; /* Adjust the font size as needed */
+}
+
+h2 {
+  font-size: 4rem;
+  color: rgba(211, 204, 184, 0.6);
+  z-index: 2; /* Place this above the header_container */
+}
+
+@supports (-webkit-text-stroke: 1px rgba(225, 225, 225, 0.5)) {
+  .home-title {
+    -webkit-text-stroke: 1px rgb(255, 243, 197);
+    -webkit-text-fill-color: transparent;
+  }
+
+  .home_title {
+    -webkit-text-stroke: 1px rgb(134, 113, 73);
+    -webkit-text-fill-color: transparent;
+  }
 }

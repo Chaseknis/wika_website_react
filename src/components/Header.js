@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
-import favicon from '../assets/favicon.png';
+import favicon from '../assets/new_logo.png';
 import './styles/header.css';
 
 const Header = () => {
@@ -36,7 +36,7 @@ const Header = () => {
                 onClick={() => setActiveNav('#about')}
                 className={activeNav === '#about' ? 'nav_link active_link' : 'nav_link'}
               >
-                <i className="uil uil-user nav_icon" />
+                <i className="uil uil-users-alt nav_icon" />
                 About
               </Link>
             </li>
@@ -47,7 +47,7 @@ const Header = () => {
                 onClick={() => setActiveNav('#industries')}
                 className={activeNav === '#industries' ? 'nav_link active_link' : 'nav_link'}
               >
-                <i className="uil uil-user nav_icon" />
+                <i className="uil uil-globe nav_icon" />
                 Industries
               </Link>
             </li>
@@ -58,7 +58,7 @@ const Header = () => {
                 onClick={() => setActiveNav('#services')}
                 className={activeNav === '#services' ? 'nav_link active_link' : 'nav_link'}
               >
-                <i className="uil uil-user nav_icon" />
+                <i className="uil uil-briefcase-alt nav_icon" />
                 Services
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Header = () => {
                 onClick={() => setActiveNav('#translation')}
                 className={activeNav === '#translation' ? 'nav_link active_link' : 'nav_link'}
               >
-                <i className="uil uil-user nav_icon" />
+                <i className="uil uil-language nav_icon" />
                 Translation
               </Link>
             </li>
@@ -80,7 +80,7 @@ const Header = () => {
                 onClick={() => setActiveNav('#faq')}
                 className={activeNav === '#faq' ? 'nav_link active_link' : 'nav_link'}
               >
-                <i className="uil uil-user nav_icon" />
+                <i className="uil uil-question nav_icon" />
                 FAQ
               </Link>
             </li>
@@ -91,7 +91,7 @@ const Header = () => {
                 onClick={() => setActiveNav('#contact')}
                 className={activeNav === '#contact' ? 'nav_link active_link' : 'nav_link'}
               >
-                <i className="uil uil-user nav_icon" />
+                <i className="uil uil-message nav_icon" />
                 Contact
               </Link>
             </li>

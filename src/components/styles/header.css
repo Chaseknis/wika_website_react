@@ -75,11 +75,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    top: initial;
-    bottom: 0;
-  }
-
   nav {
     height: 3rem;
     display: flex;

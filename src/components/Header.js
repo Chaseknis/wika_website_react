@@ -103,12 +103,13 @@ const Header = () => {
             onKeyDown={handleToggle}
             role="button"
             tabIndex={0}
+            aria-label="Close navigation"
           >
             <span className="visually-hidden">Close navigation</span>
           </i>
         </div>
 
-        <div className="nav_toggle" onClick={handleToggle} onKeyDown={handleToggle} role="button" tabIndex={0}>
+        <div className="nav_toggle" onClick={handleToggle} onKeyDown={handleToggle} role="button" tabIndex={0} aria-label="Open navigation">
           <i className="uil uil-apps" />
         </div>
       </nav>

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import videoBg5 from '../assets/videoBg5.mp4';
 import './styles/home.css';
 import Carousel from '../components/carousel';
+import ScrollDown from '../components/scrollDown';
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -18,14 +19,16 @@ const Home = () => {
         <track kind="captions" srcLang="en" label="English" />
       </video>
       <div className="overlay" />
-      <div className="header_container">
+      <div className="home_container container">
+        <div className="home_wrapper">
+          <div className="half_one_wrapper">
+            <h1 className="home_title">A Home to Professional Language Experts</h1>
+            <h2>Wika Translate</h2>
+          </div>
 
-        <div className="half_one_wrapper">
-          <h1 className="home_title">A Home to Professional Language Experts</h1>
-          <h2>Wika Translate</h2>
+          <Carousel />
         </div>
-
-        <Carousel />
+        <ScrollDown />
       </div>
     </section>
   );

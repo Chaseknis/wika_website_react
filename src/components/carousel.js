@@ -13,7 +13,7 @@ const Carousel = () => {
     {
       id: 1,
       imgSrc: image1,
-      description: 'Description for Image 1',
+      description: 'Equipment Rental',
       link: '#',
     },
     {
@@ -25,7 +25,7 @@ const Carousel = () => {
     {
       id: 3,
       imgSrc: image3,
-      description: 'Description for Image 3',
+      description: 'Simultaneous Interpretation Services',
       link: '#',
     },
   ];

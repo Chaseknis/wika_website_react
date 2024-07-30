@@ -50,7 +50,7 @@
 
 h2 {
   font-size: 4rem;
-  color: rgba(211, 204, 184, 0.6);
+  color: rgb(211, 204, 184);
   z-index: 2; /* Place this above the home_container */
 }
 

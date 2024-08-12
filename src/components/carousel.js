@@ -40,19 +40,21 @@ const Carousel = () => {
 
   return (
     <div className="half_two_wrapper">
-      <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {carouselItems.map((item, index) => (
-          <div
-            key={item.id}
-            className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
-          >
-            <img src={item.imgSrc} alt={item.description} />
-            <div className="description">{item.description}</div>
-            <a href={item.link} className="see-more">
-              See More
-            </a>
-          </div>
-        ))}
+      <div className="carousel_container">
+        <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {carouselItems.map((item, index) => (
+            <div
+              key={item.id}
+              className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
+            >
+              <img src={item.imgSrc} alt={item.description} />
+              <div className="description">{item.description}</div>
+              <a href={item.link} className="see-more">
+                See More
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
       <button type="button" id="prev" className="nav-button" onClick={handlePrev}>
         Prev

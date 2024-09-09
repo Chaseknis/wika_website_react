@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './styles/scrollUp.css';
 
-const ScrollUp = () => {
+function ScrollUp() {
   useEffect(() => {
     const scrollListener = () => {
       const scrollUp = document.querySelector('.scroll_up');
@@ -24,6 +24,6 @@ const ScrollUp = () => {
       <i className="uil uil-arrow-up scroll_up_icon" />
     </a>
   );
-};
+}
 
 export default ScrollUp;

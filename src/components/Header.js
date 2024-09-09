@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link from React Router
 import favicon from '../assets/new_logo.png';
 import './styles/header.css';
 
-const Header = () => {
+function Header() {
   const [toggle, setToggle] = useState(false);
   const [activeNav, setActiveNav] = useState('#home');
 
@@ -115,6 +115,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

@@ -1,14 +1,15 @@
 import './app.css';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import MainLayout from './components/MainLayout';
-import Home from './routes/Home';
-import About from './routes/About';
-import Industries from './routes/Industries';
-import Services from './routes/Services';
-import Translation from './routes/Translation';
-import FAQ from './routes/FAQ';
-import Contact from './routes/Contact';
+// import Home from './routes/Home';
+// import About from './routes/About';
+// import Industries from './routes/Industries';
+// import Services from './routes/Services';
+// import Translation from './routes/Translation';
+// import FAQ from './routes/FAQ';
+// import Contact from './routes/Contact';
+import Header from './components/Header';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,17 +27,17 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="industries" element={<Industries />} />
-          <Route path="services" element={<Services />} />
-          <Route path="translation" element={<Translation />} />
-          <Route path="faq" element={<FAQ />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
+      <Header />
+      <MainLayout />
+      {/* <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="industries" element={<Industries />} />
+        <Route path="services" element={<Services />} />
+        <Route path="translation" element={<Translation />} />
+        <Route path="faq" element={<FAQ />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes> */}
     </>
   );
 }

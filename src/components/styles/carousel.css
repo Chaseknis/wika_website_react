@@ -1,6 +1,7 @@
 .half_two_wrapper {
   width: 100%; /* Covering half the width */
   height: 100%; /* Covering full height */
+
   /* background: linear-gradient(-25deg, rgb(10, 47, 53) 0%, rgba(3, 37, 4, 0.739) 10%);
   background-size: contain; */
   position: relative;
@@ -37,8 +38,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .6;
+  opacity: 0.6;
   border-radius: 15px;
+
   /* animation: profile 8s ease-in-out infinite 1s; */
 }
 
@@ -102,16 +104,17 @@
   .carousel_container {
     padding: 0;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
   .half_two_wrapper {
     justify-content: center;
   }
+
   .carousel_container {
     padding: 0;
   }
+
   .carousel-item img {
     width: 100%;
     height: 70%;
@@ -148,4 +151,3 @@
     border-radius: 20% 40% 30% 20%/ 15% 30% 20% 20%;
   }
 }
-

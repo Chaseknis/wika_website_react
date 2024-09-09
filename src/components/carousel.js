@@ -6,7 +6,7 @@ import image1 from '../assets/image1.jpg';
 import image2 from '../assets/image2.jpeg';
 import image3 from '../assets/image3.jpg';
 
-const Carousel = () => {
+function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const carouselItems = [
@@ -64,6 +64,6 @@ const Carousel = () => {
       </button>
     </div>
   );
-};
+}
 
 export default Carousel;

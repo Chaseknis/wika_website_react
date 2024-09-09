@@ -2,7 +2,10 @@ import React from 'react';
 
 function FAQ() {
   return (
-    <div>FAQ</div>
+    <section className="faq" id="faq">
+      <div className="about_container container" />
+
+    </section>
   );
 }
 

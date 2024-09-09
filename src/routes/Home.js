@@ -5,7 +5,7 @@ import Carousel from '../components/carousel';
 import Socials from '../components/socials';
 import ScrollDown from '../components/scrollDown';
 
-const Home = () => {
+function Home() {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Home = () => {
         <track kind="captions" srcLang="en" label="English" />
       </video>
       <div className="overlay" />
-      <div className="home_container container">
+      <div className="home_container">
         <div className="home_wrapper">
           <div className="half_one_wrapper">
             <div className="best_ad">
@@ -57,6 +57,6 @@ const Home = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Home;

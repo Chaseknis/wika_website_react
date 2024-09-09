@@ -2,7 +2,10 @@ import React from 'react';
 
 function Translation() {
   return (
-    <div>Translation</div>
+    <section className="translation" id="translation">
+      <div className="about_container container" />
+
+    </section>
   );
 }
 

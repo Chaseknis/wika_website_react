@@ -2,7 +2,10 @@ import React from 'react';
 
 function Services() {
   return (
-    <div>Services</div>
+    <section className="services" id="services">
+      <div className="about_container container" />
+
+    </section>
   );
 }
 

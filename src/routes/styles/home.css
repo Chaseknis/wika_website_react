@@ -1,6 +1,7 @@
 .home {
   position: relative;
   width: 100%;
+  height: 100vh;
   padding: 0 5%;
   overflow: hidden;
 }
@@ -83,12 +84,19 @@
   width: 100%;
   display: flex;
   font-weight: 900;
+  padding-top: 6rem;
   gap: 1rem;
   flex-direction: column;
   align-items: center;
   z-index: 2; /* Place this above the home_container */
   color: #ffca7a; /* Adjust the color as needed */
-  font-size: 4rem; /* Adjust the font size as needed */
+  font-size: 3rem; /* Adjust the font size as needed */
+}
+
+.home_paragraph {
+  width: 70%;
+  color: #d2c79f;
+  font-style: italic;
 }
 
 .socials_and_scroll {
@@ -143,6 +151,10 @@
 
   h2 {
     font-size: 2rem;
+  }
+
+  .home_paragraph {
+    width: 100%;
   }
 }
 

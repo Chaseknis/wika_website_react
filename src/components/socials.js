@@ -16,7 +16,7 @@ function Social() {
         <i className="uil uil-instagram-alt" />
       </a>
 
-      <a href="https://www.facebook.com/wikatranslate" className="socials_icon socials-1" target="_blank" aria-label="Facebook" rel="noreferrer">
+      <a href="https://www.facebook.com/profile.php?id=100076180103188" className="socials_icon socials-1" target="_blank" aria-label="Facebook" rel="noreferrer">
         <i className="uil uil-facebook" />
       </a>
     </div>

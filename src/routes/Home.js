@@ -45,6 +45,14 @@ function Home() {
               </h1>
 
             </div>
+            <div>
+              <p className="home_paragraph">
+                Wika Translate is East Africa’s professional translation provider.
+                we have committed ourselves to pushing the boundaries of language service
+                through the development of smarter and more efficient solutions based on
+                cutting-edge technology and talented people.
+              </p>
+            </div>
           </div>
 
           <Carousel />

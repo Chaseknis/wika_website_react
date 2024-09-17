@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import videoBg5 from '../assets/videoBg5.mp4';
 import './styles/home.css';
 import Carousel from '../components/carousel';
@@ -13,6 +14,8 @@ function Home() {
       videoRef.current.playbackRate = 0.4;
     }
   }, []);
+
+  const transition = { type: 'spring', duration: 3 };
 
   return (
     <section id="home" className="home">
@@ -31,8 +34,14 @@ function Home() {
         <div className="home_wrapper">
           <div className="half_one_wrapper">
             <div className="best_ad">
-              <div />
-              <span>Wika</span>
+              <motion.div
+                initial={{ left: '238px' }}
+                whileInView={{ left: '8px' }}
+                transition={{ ...transition, type: 'tween' }}
+              />
+              <span>
+                Wika
+              </span>
               <span>
                 Translate
               </span>

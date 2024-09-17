@@ -4,44 +4,92 @@ import './styles/footer.css';
 function Footer() {
   return (
     <footer>
-      <div className="footer_container">
-        <a href="#home" className="logo footer_logo">Chase</a>
-        <ul>
-          <li>
-            <a href="#about" className="footer_link">About</a>
-          </li>
+      <div className="footer-container">
+        <div className="footer-content">
+          <div className="brand-section">
+            <a href="#home">
+              <img
+                src="images/Wika_Icon_logo_with_bg.png"
+                alt="Wika Translate Logo"
+                className="logo"
+              />
+            </a>
+            <p className="brand-description">
+              Wika Translate Ltd offers one-stop solutions to your translation needs.
+            </p>
+            <div className="social-links">
+              <div className="footer_socials_wrapper">
+                <a href="https://www.linkedin.com/company/81655771" className="socials_icon socials-2" target="_blank" aria-label="LinkedIn" rel="noreferrer">
+                  <i className="uil uil-linkedin" />
+                </a>
 
-          <li>
-            <a href="#portfolio" className="footer_link">Projects</a>
-          </li>
+                <a href="https://www.twitter.com/wikatranslate" className="socials_icon socials-3" target="_blank" aria-label="Twitter" rel="noreferrer">
+                  <i className="uil uil-twitter" />
+                </a>
 
-          <li>
-            <a href="#contact" className="footer_link">Contact</a>
-          </li>
-        </ul>
+                <a href="https://www.instagram.com/wikatranslate" className="socials_icon socials-3" target="_blank" aria-label="Instagram" rel="noreferrer">
+                  <i className="uil uil-instagram-alt" />
+                </a>
 
-        <div className="footer_socials_wrapper">
-          <a href="https://www.linkedin.com/company/81655771" className="socials_icon socials-2" target="_blank" aria-label="LinkedIn" rel="noreferrer">
-            <i className="uil uil-linkedin" />
-          </a>
+                <a href="https://www.facebook.com/wikatranslate" className="socials_icon socials-1" target="_blank" aria-label="Facebook" rel="noreferrer">
+                  <i className="uil uil-facebook" />
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <a href="https://www.twitter.com/wikatranslate" className="socials_icon socials-3" target="_blank" aria-label="Twitter" rel="noreferrer">
-            <i className="uil uil-twitter" />
-          </a>
+          <div className="links-section">
+            <h3 className="links-title">Useful Links</h3>
+            <div className="links-container">
+              <ul className="links-list">
+                <li><a href="#home" className="link">Home</a></li>
+                <li><a href="#contact-us" className="link">Contact Us</a></li>
+                <li><a href="#about-us" className="link">About Us</a></li>
+                <li><a href="#services" className="link">Services</a></li>
+              </ul>
+              <ul className="links-list">
+                <li><a href="#blog" className="link">Blog</a></li>
+                <li><a href="#frequently-asked-questions" className="link">FAQ</a></li>
+                <li><a href="#termsandconditions" className="link">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
 
-          <a href="https://www.instagram.com/wikatranslate" className="socials_icon socials-3" target="_blank" aria-label="Instagram" rel="noreferrer">
-            <i className="uil uil-instagram-alt" />
-          </a>
-
-          <a href="https://www.facebook.com/wikatranslate" className="socials_icon socials-1" target="_blank" aria-label="Facebook" rel="noreferrer">
-            <i className="uil uil-facebook" />
-          </a>
+          <div className="newsletter-section">
+            <h3 className="newsletter-title">Subscribe To Our Newsletter</h3>
+            <div className="newsletter-form">
+              <form name="submit-to-google-sheet" className="form">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Email Address"
+                  className="email-input"
+                />
+                <button type="submit" className="subscribe-button">
+                  {/* <IoSendSharp className="send-icon" /> */}
+                </button>
+              </form>
+              <span id="msg" className="message" />
+            </div>
+            <p className="newsletter-description">
+              Wika Translate Ltd constantly reaches out to
+              translators and interpreters to find the very best.
+            </p>
+          </div>
         </div>
 
-        <span className="copyrights">
-          &#169; 2023 Chase. All rights reserved
-        </span>
-
+        <div className="footer-bottom">
+          <img src="images/Line.png" alt="Divider Line" className="divider-line" />
+          <div className="footer-bottom-content">
+            <span className="terms-text">
+              Terms of use | Privacy Environmental Policy
+            </span>
+            <span className="copyrights">
+              &#169; 2024 Wika Translate Ltd. All rights reserved
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -67,7 +67,8 @@ function Footer() {
                   className="email-input"
                 />
                 <button type="submit" className="subscribe-button">
-                  {/* <IoSendSharp className="send-icon" /> */}
+                  Subscribe
+                  <i className="uil uil-message" />
                 </button>
               </form>
               <span id="msg" className="message" />

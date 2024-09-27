@@ -75,7 +75,7 @@ function Home() {
                 through the development of smarter and more efficient solutions based on
                 cutting-edge technology and talented people.
               </p>
-              <Link to="/quotation">
+              <Link to="/contact">
                 <button className="quotation_button button" type="button">
                   Get a quick Quotation
                 </button>

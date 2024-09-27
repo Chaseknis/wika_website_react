@@ -1,21 +1,50 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import favicon from '../assets/new_logo.png';
 import './styles/header.css';
 
 function Header() {
   const [toggle, setToggle] = useState(false);
   const [activeNav, setActiveNav] = useState('#home');
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
   return (
-    <header>
+    <header className={isScrolled ? 'scrolled' : ''}>
+      {!isScrolled && (
+      <div className="header_contact_card">
+        <div className="contact_card">
+          <i className="bx bxl-whatsapp contact_card_icon" />
+          <a href="https://api.whatsapp.com/send?phone=250788933063&text=Hello, more information!" className="header_contact_button">
+            +250 788 933 063
+            <i className="bx bx-right-arrow-alt header_contact_button_icon" />
+          </a>
+        </div>
+
+        <div className="contact_card">
+          <i className="bx bx-mail-send contact_card_icon" />
+          <a href="mailto:info@wikatranslate.net" className="header_contact_button">
+            info@wikatranslate.net
+            <i className="bx bx-right-arrow-alt header_contact_button_icon" />
+          </a>
+        </div>
+      </div>
+      )}
       <nav>
         <a href="#home" className="logo" aria-label="logo" onClick={() => setActiveNav('#home')}>
-          <img src={favicon} alt="" />
+          <img src={favicon} alt="logo" />
         </a>
         <div className={toggle ? 'nav_menu show_menu' : 'nav_menu'}>
           <ul>
@@ -29,7 +58,6 @@ function Header() {
                 Home
               </a>
             </li>
-
             <li>
               <Link
                 to="/about"
@@ -40,7 +68,6 @@ function Header() {
                 About
               </Link>
             </li>
-
             <li>
               <Link
                 to="/industries"
@@ -51,7 +78,6 @@ function Header() {
                 Industries
               </Link>
             </li>
-
             <li>
               <Link
                 to="/services"
@@ -62,7 +88,6 @@ function Header() {
                 Services
               </Link>
             </li>
-
             <li>
               <Link
                 to="/translation"
@@ -73,7 +98,6 @@ function Header() {
                 Translation
               </Link>
             </li>
-
             <li>
               <Link
                 to="/faq"
@@ -84,7 +108,6 @@ function Header() {
                 FAQ
               </Link>
             </li>
-
             <li>
               <Link
                 to="/contact"
@@ -104,13 +127,11 @@ function Header() {
             role="button"
             tabIndex={0}
             aria-label="Close navigation"
-          >
-            <span className="visually-hidden">Close navigation</span>
-          </i>
+          />
         </div>
 
         <div className="nav_toggle" onClick={handleToggle} onKeyDown={handleToggle} role="button" tabIndex={0} aria-label="Open navigation">
-          <i className="uil uil-apps" />
+          <i className="uil uil-bars" />
         </div>
       </nav>
     </header>

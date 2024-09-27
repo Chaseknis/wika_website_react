@@ -21,6 +21,7 @@
 
 .button {
   padding: 12px 24px;
+  cursor: pointer;
 }
 
 @supports (-webkit-text-stroke: 1px rgba(225, 225, 225, 0.5)) {

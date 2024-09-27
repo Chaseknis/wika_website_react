@@ -16,11 +16,6 @@ footer {
   align-items: center;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer_link {
   color: #ffca7a;
   cursor: pointer;

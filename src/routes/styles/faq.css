@@ -1,0 +1,77 @@
+/* FAQ Section Styles */
+.faq {
+  height: 100vh;
+  padding: 0 5%;
+  background-color: #d3ccb8;
+}
+
+.faq-header {
+  padding-top: 5%;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'HeroTitleFont', sans-serif;
+  font-weight: bold;
+  color: #8b4513; /* dullBrown */
+  line-height: 3.4375rem;
+}
+
+.faq-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 20px 0;
+  font-family: 'HeaderFont', sans-serif;
+  font-weight: bold;
+  color: #0d2601; /* darkJungleGreen */
+  line-height: 2rem;
+}
+
+.faq-content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-list-container {
+  max-width: 100%;
+  padding: 3rem 5%;
+  background-color: #f2e6d9; /* barleyWhite */
+  border-radius: 0.5rem;
+}
+
+.faq-item {
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  background-color: #f2e6d9;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #8b4513; /* dullBrown */
+  font-family: 'SubHeaderFont', sans-serif;
+  font-weight: normal;
+  line-height: 1.2rem;
+}
+
+.faq-question:hover {
+  font-weight: bold;
+}
+
+.faq-answer {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-family: 'ParagraphTextFont', sans-serif;
+  font-weight: lighter;
+  color: #0d2601; /* darkJungleGreen */
+  line-height: 1rem;
+}

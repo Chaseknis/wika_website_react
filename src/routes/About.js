@@ -1,10 +1,12 @@
 import React from 'react';
 import './styles/about.css';
 import image5 from '../assets/image5.JPG';
+import Banner from '../components/banner';
 
 function About() {
   return (
     <section className="about" id="about">
+      <Banner />
       <div className="about_container container">
         <div>
           <div className="page_title">

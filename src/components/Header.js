@@ -29,7 +29,6 @@ function Header() {
           <i className="bx bxl-whatsapp contact_card_icon" />
           <a href="https://api.whatsapp.com/send?phone=250788933063&text=Hello, more information!" className="header_contact_button">
             +250 788 933 063
-            <i className="bx bx-right-arrow-alt header_contact_button_icon" />
           </a>
         </div>
 
@@ -37,7 +36,6 @@ function Header() {
           <i className="bx bx-mail-send contact_card_icon" />
           <a href="mailto:info@wikatranslate.net" className="header_contact_button">
             info@wikatranslate.net
-            <i className="bx bx-right-arrow-alt header_contact_button_icon" />
           </a>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles/priceCalculator.css';
 import mammoth from 'mammoth'; // For .docx files
 import * as pdfjsLib from 'pdfjs-dist/build/pdf'; // For PDFs
+import emailjs from 'emailjs-com'; // Import EmailJS
 
 // Manually specify the PDF.js worker path
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
@@ -9,9 +10,10 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.j
 function PriceCalculator() {
   const [sourceLanguage, setSourceLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('English');
+  const [email, setEmail] = useState(''); // State for email
   const [wordCount, setWordCount] = useState(0);
-  const [price, setPrice] = useState(0);
   const [volume, setVolume] = useState('');
+  const [notification, setNotification] = useState(''); // State for notifications
 
   // Language List
   const languages = [
@@ -34,6 +36,26 @@ function PriceCalculator() {
 
   const handleSourceLanguageChange = (e) => setSourceLanguage(e.target.value);
   const handleTargetLanguageChange = (e) => setTargetLanguage(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value); // Update email state
+
+  // Function to send email with calculated price
+  const sendEmail = (calculatedPrice) => {
+    const templateParams = {
+      to_email: email,
+      from_email: 'wikatranslate@gmail.com',
+      price: calculatedPrice,
+      sourceLanguage,
+      targetLanguage,
+    };
+
+    emailjs.send('service_w3zwqrf', 'template_pyec1ge', templateParams, 'pNQjjYBL7WAJAVeWv')
+      .then(() => {
+        setNotification('Email sent successfully!'); // Notify user
+      })
+      .catch(() => {
+        setNotification('Failed to send email. Please try again later.'); // Notify user
+      });
+  };
 
   // Classify document as low or high volume based on word count
   const classifyVolume = (words) => {
@@ -53,12 +75,13 @@ function PriceCalculator() {
     let calculatedPrice;
 
     if (volume === 'low') {
-      calculatedPrice = isSpecialLanguage ? pages * 42900 : pages * 23900;
+      calculatedPrice = isSpecialLanguage ? pages * 45900 : pages * 23900;
     } else {
-      calculatedPrice = isSpecialLanguage ? wordCount * 145 : wordCount * 110;
+      calculatedPrice = isSpecialLanguage ? wordCount * 140 : wordCount * 90;
     }
 
-    setPrice(calculatedPrice);
+    // Send price via email
+    sendEmail(calculatedPrice);
   };
 
   // Function to extract text from a PDF file and count words
@@ -114,7 +137,7 @@ function PriceCalculator() {
       };
       reader.readAsText(uploadedFile);
     } else {
-      alert('Please upload a valid PDF, DOCX, or TXT file.');
+      setNotification('Please upload a valid PDF, DOCX, or TXT file.'); // Notify user
     }
   };
 
@@ -135,6 +158,16 @@ function PriceCalculator() {
           <option key={lang} value={lang}>{lang}</option>
         ))}
       </select>
+
+      {/* Email Input */}
+      <input
+        type="email"
+        id="emailInput"
+        value={email}
+        onChange={handleEmailChange}
+        placeholder="Enter your email"
+        required
+      />
 
       {/* File Upload */}
       <input type="file" id="fileUpload" onChange={handleFileUpload} accept=".pdf, .docx, .txt" />
@@ -157,18 +190,13 @@ function PriceCalculator() {
         </p>
       )}
 
-      {/* Calculate Price Button */}
-      <button type="button" onClick={calculatePrice}>Calculate Price</button>
+      {/* Notification Message */}
+      {notification && <p>{notification}</p>}
+      {' '}
+      {/* Display notification message */}
 
-      {/* Price Display */}
-      {price > 0 && (
-        <h3>
-          Total Price:
-          {price}
-          {' '}
-          RWF
-        </h3>
-      )}
+      {/* Calculate Price Button */}
+      <button type="button" onClick={calculatePrice}>Send Price</button>
     </div>
   );
 }

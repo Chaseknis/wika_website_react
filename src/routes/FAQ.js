@@ -1,11 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes for prop validation
 import './styles/faq.css';
+import OurPartners from '../components/ourPartners';
+
+// Define prop types for FAQItem
+function FAQItem({ question, answer }) {
+  return (
+    <details className="faq-item">
+      <summary className="faq-question">{question}</summary>
+      <p className="faq-answer">{answer}</p>
+    </details>
+  );
+}
+
+// Add PropTypes validation
+FAQItem.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired,
+};
 
 function FAQ() {
   return (
     <section className="faq" id="faq">
-      <div className="faq_container" />
       <div className="faq-container">
         <div className="faq-header">
           <div data-aos="zoom-in-right">
@@ -56,24 +72,9 @@ function FAQ() {
           </div>
         </div>
       </div>
+      <OurPartners />
     </section>
   );
 }
-
-// Define prop types for FAQItem
-function FAQItem({ question, answer }) {
-  return (
-    <details className="faq-item">
-      <summary className="faq-question">{question}</summary>
-      <p className="faq-answer">{answer}</p>
-    </details>
-  );
-}
-
-// Add PropTypes validation
-FAQItem.propTypes = {
-  question: PropTypes.string.isRequired,
-  answer: PropTypes.string.isRequired,
-};
 
 export default FAQ;

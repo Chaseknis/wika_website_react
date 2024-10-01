@@ -5,7 +5,7 @@ import PriceCalculator from '../components/priceCalculator';
 function Industries() {
   return (
     <section className="industries" id="industries">
-      <div className="about_container container" />
+      <div className="industries_container" />
       <PriceCalculator />
 
     </section>

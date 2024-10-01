@@ -6,17 +6,12 @@
   margin: 0;
 }
 
-/* .page_container {
-    width: 100%;
-    background-image: linear-gradient(-25deg, rgb(10, 47, 53) 0%, rgba(3, 37, 4, 0.739) 10%);
-  } */
-
 .container {
   width: 100%;
   height: 100vh;
   align-items: center;
   padding: 0 5%;
-  background-color: #d3ccb8;
+  background-color: rgba(211, 204, 184, 0.9);
 }
 
 .button {

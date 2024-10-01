@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/footer.css';
+import favicon from '../assets/new_logo.png';
 
 function Footer() {
   return (
@@ -9,9 +10,9 @@ function Footer() {
           <div className="brand-section">
             <a href="#home">
               <img
-                src="images/Wika_Icon_logo_with_bg.png"
+                src={favicon}
                 alt="Wika Translate Logo"
-                className="logo"
+                className="footer_logo"
               />
             </a>
             <p className="brand-description">

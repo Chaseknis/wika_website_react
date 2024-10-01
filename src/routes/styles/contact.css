@@ -5,7 +5,7 @@
   height: 100vh;
   overflow: hidden;
   padding: 0 5%;
-  background-color: #d3ccb8;
+  background-color: rgba(211, 204, 184, 0.9);
 }
 
 .container_container {

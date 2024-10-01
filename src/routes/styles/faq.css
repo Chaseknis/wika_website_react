@@ -1,8 +1,7 @@
 /* FAQ Section Styles */
 .faq {
-  height: 100vh;
   padding: 0 5%;
-  background-color: #d3ccb8;
+  background-color: rgba(211, 204, 184, 0.9);
 }
 
 .faq-header {

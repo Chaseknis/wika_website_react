@@ -1,0 +1,199 @@
+.services {
+  width: 100%;
+  padding: 5%;
+  background-color: rgba(211, 204, 184, 0.9);
+  overflow: hidden;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-title {
+  color: #1a3c34;
+  position: relative;
+  font-size: 22px;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.services-title hr {
+  width: 128px;
+  border: none;
+  height: 3px;
+  background-color: #b7312a;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.services-paragraph {
+  width: 100%;
+  color: #1a3c34;
+  font-size: 0.8rem;
+  padding: 1rem 0 2rem 0;
+  line-height: 20px;
+}
+
+.services-paragraph-two {
+  width: 100%;
+  padding: 0 0 2rem 0;
+  color: #1a3c34;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_container {
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.services_card {
+  width: 80px;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.services_card > .services_row {
+  color: #ffca7a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.services_card > .services_row > .services_icon {
+  width: 50px;
+  background: #ffca7a;
+  color: #1a3c34;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.services_card > .services_row .services_description {
+  width: 520px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.services_description p {
+  color: #ffca7a;
+  padding-top: 5px;
+}
+
+.services_description h4 {
+  text-transform: uppercase;
+}
+
+.services_container input {
+  display: none;
+}
+
+.services_container input:checked + label {
+  width: 800px;
+}
+
+.services_container input:checked + label .services_description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.services_card[for="c1"] {
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4873.jpeg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.services_card[for="c2"] {
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4635.jpeg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.services_card[for="c3"] {
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4630.jpeg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.services_card[for="c4"] {
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4925.JPG);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.services_card[for="c5"] {
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_6263.jpeg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 576px) {
+  .services-paragraph {
+    padding: 1rem 2rem 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .services-paragraph {
+    padding: 1rem 0 2rem 4rem;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-paragraph {
+    padding: 1rem 2rem 2rem 4rem;
+  }
+
+  .services-paragraph-two {
+    padding: 0 2rem 2rem 0;
+  }
+
+  .faq-question {
+    position: relative;
+    max-width: 700px;
+  }
+}

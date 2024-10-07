@@ -1,0 +1,133 @@
+.about {
+  width: 100%;
+}
+
+.about_container {
+  width: 100%;
+  background: linear-gradient(rgba(56, 52, 41, 0.6), rgba(56, 52, 41, 0.9)), url(/src/assets/image5.JPG);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+  padding-bottom: 6%;
+}
+
+.about_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about_title_container {
+  margin-top: 2rem;
+  margin-right: 0;
+  order: 2;
+}
+
+.about_image_container {
+  order: 1;
+}
+
+.about_image_wrapper img {
+  width: 100%;
+  padding-top: 3rem;
+  height: auto;
+}
+
+.about_page_title h2 {
+  color: #ffca7a;
+  position: relative;
+  font-size: 22px;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about_page_title hr {
+  width: 90px; /* Line width */
+  border: none;
+  height: 3px; /* Thickness of the line */
+  background-color: #b7312a; /* Line color */
+  margin-top: 10px; /* Center the line and add space around it */
+  margin-bottom: 20px;
+}
+
+.about_page_title p {
+  width: 100%;
+  color: #ffca7a;
+  font-size: 0.8rem;
+  padding: 1rem 0 2rem 0;
+  line-height: 20px;
+}
+
+.second_paragraph {
+  width: 100%;
+  padding: 0 0 2rem 0;
+  color: #ffca7a;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.about_banner_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5%;
+}
+
+.about_banner_card_wrapper {
+  background-color: #b7312a;
+  padding: 1rem;
+}
+
+.about_banner_card_wrapper span {
+  color: #ffca7a;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about_banner_card_wrapper p {
+  color: #ffca7a;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about_page_title p {
+    padding: 1rem 0 2rem 4rem;
+  }
+
+  .about_banner_wrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about_wrapper {
+    flex-direction: row;
+  }
+
+  .about_title_container {
+    margin-top: 3rem;
+    order: 1;
+  }
+
+  .about_image_container {
+    order: 2;
+  }
+
+  .about_page_title p {
+    padding: 1rem 2rem 2rem 4rem;
+  }
+
+  .second_paragraph {
+    padding: 0 2rem 2rem 0;
+  }
+}

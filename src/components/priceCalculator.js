@@ -143,7 +143,9 @@ function PriceCalculator() {
 
   return (
     <div className="price-calculator">
-      <h2>Translation Price Calculator</h2>
+      <h2>
+        Translation Price Calculator
+      </h2>
 
       {/* Source Language Selection */}
       <select id="sourceLanguage" value={sourceLanguage} onChange={handleSourceLanguageChange}>
@@ -170,7 +172,7 @@ function PriceCalculator() {
       />
 
       {/* File Upload */}
-      <input type="file" id="fileUpload" onChange={handleFileUpload} accept=".pdf, .docx, .txt" />
+      <input type="file" className="file_upload" id="fileUpload" onChange={handleFileUpload} accept=".pdf, .docx, .txt" />
 
       {/* Word Count Display */}
       {wordCount > 0 && (
@@ -184,7 +186,7 @@ function PriceCalculator() {
       {/* Volume Classification */}
       {volume && (
         <p>
-          Document classified as:
+          Document Classified as:
           {' '}
           {volume === 'low' ? 'Low Volume' : 'High Volume'}
         </p>

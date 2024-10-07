@@ -1,111 +1,114 @@
 import React from 'react';
 import './styles/services.css';
-import cropped from '../assets/cropped.png';
+import Banner from '../components/banner';
 
 function Services() {
   return (
     <section className="services" id="services">
-      <div className="services_container" />
-      <div className="services_wrapper">
-        <div className="services_header">
-          <div data-aos="zoom-in-right">
-            <h1 className="services_title">Services</h1>
+      <Banner />
+      <div className="header_wrapper">
+        <div className="faq-header">
+          <div>
+            <h2 className="services-title">
+              Our Services
+              <hr />
+            </h2>
+            <p className="services-paragraph">
+              At Wika Translate Ltd, we specialize in bridging language barriers and enhancing
+              communication for businesses and individuals alike. Our diverse range of services
+              is designed to meet all your linguistic needs. From precise Translation that
+              resonates with your target audience to expert Interpretation services, including
+              simultaneous interpretation for conferences and events, we ensure your message
+              is conveyed clearly. We also provide rental of advanced tour guide system equipment
+              for seamless multilingual experiences. Our Subtitling and Transcription services cater
+              to media production and documentation, ensuring clarity and accessibility for all.
+            </p>
           </div>
-          <div data-aos="zoom-out-up">
-            <h2 className="services_subtitle">A Leading Translation Agency</h2>
-          </div>
+          <p className="services-paragraph-two">
+            Additionally, our Localization services transform your products and services to align
+            with local cultures, making them more relevant and appealing. With a dedicated team of
+            professionals and the latest technology at our disposal, Wika Translate Ltd is your
+            trusted partner for effective communication in today’s global landscape. Let us help
+            you connect with your audience like never before!
+          </p>
         </div>
+      </div>
 
-        <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          className="services_grid"
-        >
-          {/* Image */}
-          <div
-            data-aos="zoom-out"
-            className="services_image_wrapper"
-          >
-            <img
-              src={cropped}
-              className="services_image"
-              alt="cropped"
-            />
-          </div>
-
-          {/* Translation */}
-          <div className="services_card">
-            <div className="service_icon_text">
-              <i className="fa-solid fa-language service_icon" />
-              <h3 className="service_title">Translation</h3>
+      <div className="wrapper">
+        <div className="services_container">
+          <input type="radio" name="slide" id="c1" checked />
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label htmlFor="c1" className="services_card">
+            <div className="services_row">
+              <div className="services_icon">1</div>
+              <div className="services_description">
+                <h4>Translation</h4>
+                <p>
+                  We offer professional translation services in 100+ languages in Legal,
+                  Technical, Science, Agriculture, and Business Fields, etc.
+                </p>
+              </div>
             </div>
-            <p className="service_description">
-              We offer professional translation services in 100+ languages in Legal,
-              Technical, Science, Agriculture and Business Fields Etc..
-            </p>
-          </div>
-
-          {/* Interpreting */}
-          <div className="services_card">
-            <div className="service_icon_text">
-              <i className="fa-solid fa-headset service_icon" />
-              <h3 className="service_title">Interpreting</h3>
+          </label>
+          <input type="radio" name="slide" id="c2" />
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label htmlFor="c2" className="services_card">
+            <div className="services_row">
+              <div className="services_icon">2</div>
+              <div className="services_description">
+                <h4>Interpretation</h4>
+                <p>
+                  Simultaneous and Consecutive interpreting, Hiring interpretation equipment
+                  and Escorting Interpretation.
+                </p>
+              </div>
             </div>
-            <p className="service_description">
-              Simultaneous and Consecutive interpreting, Hiring interpretation equipment
-              and Escorting Interpretation.
-            </p>
-          </div>
-
-          {/* Subtitling */}
-          <div className="services_card">
-            <div className="service_icon_text">
-              <i className="fa-solid fa-closed-captioning service_icon" />
-              <h3 className="service_title">Subtitling</h3>
+          </label>
+          <input type="radio" name="slide" id="c3" />
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label htmlFor="c3" className="services_card">
+            <div className="services_row">
+              <div className="services_icon">3</div>
+              <div className="services_description">
+                <h4>Subtitling</h4>
+                <p>
+                  Translating spoken dialogue From Transcripts, screenplay,
+                  commentary in films and television programs, Video games into written text
+                  on the screen.
+                </p>
+              </div>
             </div>
-            <p className="service_description">
-              Translating spoken dialogue From Transcripts, screenplay, commentary in
-              films and television programs, Video games into written text on the screen.
-            </p>
-          </div>
+          </label>
 
-          {/* Transcription */}
-          <div className="services_card">
-            <div className="service_icon_text">
-              <i className="fa-solid fa-file-lines service_icon" />
-              <h3 className="service_title">Transcription</h3>
+          <input type="radio" name="slide" id="c4" />
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label htmlFor="c4" className="services_card">
+            <div className="services_row">
+              <div className="services_icon">4</div>
+              <div className="services_description">
+                <h4>Transcription</h4>
+                <p>
+                  We provide transcription services for videos or audio-recordings of
+                  any length or any language.
+                </p>
+              </div>
             </div>
-            <p className="service_description">
-              We provide transcription services for videos or audio-recordings of any length
-              or any language.
-            </p>
-          </div>
+          </label>
+          <input type="radio" name="slide" id="c5" />
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label htmlFor="c5" className="services_card">
+            <div className="services_row">
+              <div className="services_icon">5</div>
+              <div className="services_description">
+                <h4>Localization</h4>
+                <p>
+                  We address cultural and non-textual components as well as linguistic
+                  issues when adapting a product or service for another country or locale.
+                </p>
+              </div>
+            </div>
+          </label>
 
-          {/* Localization */}
-          <div className="services_card">
-            <div className="service_icon_text">
-              <i className="fa-solid fa-earth-americas service_icon" />
-              <h3 className="service_title">Localization</h3>
-            </div>
-            <p className="service_description">
-              We address cultural and non-textual components as well as linguistic issues
-              when adapting a product or service for another country or locale.
-            </p>
-          </div>
-
-          {/* Government */}
-          <div className="services_card">
-            <div className="service_icon_text">
-              <i className="fa-sharp fa-solid fa-landmark service_icon" />
-              <h3 className="service_title">Government</h3>
-            </div>
-            <p className="service_description">
-              We work with federal, state and local government offices. With trust
-              and outstanding level of confidentiality, we provide high-quality
-              services.
-            </p>
-          </div>
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import MainLayout from './components/MainLayout';
 import Header from './components/Header';
 import ScrollUp from './components/scrollUp';
-import PreLoader from './components/preLoader';
+// import PreLoader from './components/preLoader';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -99,7 +99,7 @@ function App() {
         <meta name="author" content="Wika Translate Team" />
       </Helmet>
 
-      <PreLoader />
+      {/* <PreLoader /> */}
       <ScrollToTop />
       <ScrollUp />
       <Header />

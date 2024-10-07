@@ -15,66 +15,71 @@ import Irembo from '../assets/irembogovrw_logo.png';
 
 function OurPartners() {
   return (
-    <section id="our-partners">
-      <div className="our-partners-container">
-        <div className="our-partners-header">
-          <div data-aos="zoom-in-right">
-            <h1 className="our-partners-title">
-              Our Partners
-            </h1>
-          </div>
-          <div data-aos="zoom-out-up">
-            <h2 className="our-partners-subtitle">
-              We Feel Very Proud For Our Great Achievements
-            </h2>
-          </div>
+    <div className="our-partners-container">
+      <div className="our-partners-header">
+        <div>
+          <h2 className="our-partners-title">
+            Our Partners
+            <hr />
+          </h2>
+          <p className="our-partners-paragraph">
+            At Wika Translate Ltd, our clients are at the heart of everything we do.
+            We pride ourselves on delivering tailored language solutions that not only meet
+            but exceed expectations, with an unwavering commitment to professionalism and
+            integrity. Our diverse clientele ranges from multinational corporations to
+            individuals, each benefiting from our customized services designed to address
+            their unique needs.
+          </p>
         </div>
-        <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          id="scale_Partners"
-          className="our-partners-grid"
-        >
-          <div className="partner-item">
-            <img src={PaxforPeace} alt="Guaranty Trust Bank" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={mPharma} alt="mPharma Rwanda" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={HIVOS} alt="HIVOS International" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={care} alt="CARE Rwanda" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={GTBank} alt="Guaranty Trust Bank" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={Ishyo} alt="Ishyo Art Center" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={technisup} alt="Technisup Rwanda LTD" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={OryxEnergies} alt="ORYX Energies Rwanda" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={SmartAfrica} alt="Smart Africa" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={BurkinaFaso} alt="Burkina Faso" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={Rwanda} alt="Rwanda Government" className="partner-logo" />
-          </div>
-          <div className="partner-item">
-            <img src={Irembo} alt="Irembo" className="partner-logo" />
-          </div>
+        <p className="our-partners-paragraph-two">
+          By fostering trust and cultivating long-term partnerships, we ensure seamless
+          communication across languages and cultures. Our focus is on delivering outstanding
+          results, ensuring successful communication outcomes for every client and strengthening
+          relationships that endure over time.
+        </p>
+      </div>
+      <div
+        id="scale_Partners"
+        className="our-partners-grid"
+      >
+        <div className="partner-item">
+          <img src={PaxforPeace} alt="Guaranty Trust Bank" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={mPharma} alt="mPharma Rwanda" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={HIVOS} alt="HIVOS International" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={care} alt="CARE Rwanda" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={GTBank} alt="Guaranty Trust Bank" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={Ishyo} alt="Ishyo Art Center" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={technisup} alt="Technisup Rwanda LTD" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={OryxEnergies} alt="ORYX Energies Rwanda" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={SmartAfrica} alt="Smart Africa" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={BurkinaFaso} alt="Burkina Faso" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={Rwanda} alt="Rwanda Government" className="partner-logo" />
+        </div>
+        <div className="partner-item">
+          <img src={Irembo} alt="Irembo" className="partner-logo" />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

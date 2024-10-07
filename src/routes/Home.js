@@ -4,9 +4,8 @@ import { motion } from 'framer-motion';
 import videoBg5 from '../assets/videoBg5.mp4';
 import './styles/home.css';
 import Socials from '../components/socials';
-import Carousel from '../components/carousel';
+import PriceCalculator from '../components/priceCalculator';
 import ScrollDown from '../components/scrollDown';
-// import Quotation from '../components/Quotation';
 
 function Home() {
   const videoRef = useRef(null);
@@ -70,10 +69,9 @@ function Home() {
             </div>
             <div>
               <p className="home_paragraph">
-                Wika Translate is East Africa’s professional translation provider.
-                we have committed ourselves to pushing the boundaries of language service
-                through the development of smarter and more efficient solutions based on
-                cutting-edge technology and talented people.
+                Wika Translate is East Africa’s top language service provider, delivering fast,
+                accurate translation and interpretation solutions through advanced technology
+                and expert linguists.
               </p>
               <Link to="/contact">
                 <button className="quotation_button button" type="button">
@@ -82,7 +80,10 @@ function Home() {
               </Link>
             </div>
           </div>
-          <Carousel />
+          <div className="half_two_wrapper">
+            <PriceCalculator />
+          </div>
+
         </div>
 
         <div className="socials_and_scroll">

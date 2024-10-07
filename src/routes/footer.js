@@ -82,7 +82,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <img src="images/Line.png" alt="Divider Line" className="divider-line" />
+          <hr className="divider-line" />
           <div className="footer-bottom-content">
             <span className="terms-text">
               Terms of use | Privacy Environmental Policy

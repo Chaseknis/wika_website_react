@@ -1,0 +1,83 @@
+.price-calculator {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+
+  /* background: white; */
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+}
+
+.price-calculator h2 {
+  color: #ffca7a;
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 2rem;
+}
+
+.price-calculator select {
+  color: #ffca7a;
+  background: none;
+}
+
+.file_upload,
+p {
+  color: #ffca7a;
+  font-size: 0.8rem;
+}
+
+.file_upload::placeholder {
+  background: none;
+}
+
+.price-calculator input {
+  color: #ffca7a;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.price-calculator label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.price-calculator select,
+.price-calculator input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 0.8rem;
+  border: 1px solid #ffca7a;
+}
+
+.price-calculator button {
+  padding: 10px 30px;
+  background: none;
+  color: #ffca7a;
+  border: 1px solid #ffca7a;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.price-calculator button:hover {
+  background-color: #ffca7a;
+  color: #1a3c34;
+}
+
+.price-calculator h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #28a745;
+}
+
+@media screen and (min-width: 768px) {
+  .price-calculator {
+    width: 70%;
+  }
+}

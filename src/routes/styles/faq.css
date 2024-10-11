@@ -4,10 +4,6 @@
   background-color: rgba(211, 204, 184, 0.9);
 }
 
-.faq-container {
-  padding-top: 6rem;
-}
-
 .faq-title {
   color: #1a3c34;
   position: relative;
@@ -115,6 +111,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 2rem;
   }
 
   .faq-header {

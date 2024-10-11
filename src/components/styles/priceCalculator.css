@@ -1,20 +1,17 @@
 .price-calculator {
-  width: 90%;
-  margin: auto;
-  padding: 20px;
-
-  /* background: white; */
+  width: 100%;
+  padding: 1rem 10px;
   text-align: center;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 60px 40px -7px;
 }
 
 .price-calculator h2 {
   color: #ffca7a;
-  text-align: left;
+  text-align: center;
   font-size: 22px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .price-calculator select {
@@ -47,8 +44,8 @@ p {
 .price-calculator select,
 .price-calculator input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 10px 8px;
+  margin-bottom: 1rem;
   outline: none;
   font-size: 0.8rem;
   border: 1px solid #ffca7a;
@@ -60,7 +57,7 @@ p {
   color: #ffca7a;
   border: 1px solid #ffca7a;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 10px;
   text-transform: uppercase;
   margin-top: 1rem;
 }
@@ -76,8 +73,27 @@ p {
   color: #28a745;
 }
 
+@media screen and (min-width: 576px) {
+  .price-calculator {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .price-calculator {
-    width: 70%;
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .price-calculator h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .price-calculator select,
+  .price-calculator input {
+    margin-bottom: 1.5rem;
   }
 }

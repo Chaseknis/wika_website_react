@@ -50,8 +50,8 @@ function Footer() {
               </ul>
               <ul className="links-list">
                 <li><a href="#blog" className="link">Blog</a></li>
-                <li><a href="#frequently-asked-questions" className="link">FAQ</a></li>
-                <li><a href="#termsandconditions" className="link">Terms & Conditions</a></li>
+                <li><a href="#faq" className="link">FAQ</a></li>
+                <li><a href="#terms_and_conditions" className="link">Terms & Conditions</a></li>
               </ul>
             </div>
           </div>
@@ -69,7 +69,7 @@ function Footer() {
                 />
                 <button type="submit" className="subscribe-button">
                   Subscribe
-                  <i className="uil uil-message" />
+                  <i className="uil uil-message send-icon" />
                 </button>
               </form>
               <span id="msg" className="message" />

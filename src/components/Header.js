@@ -66,7 +66,7 @@ function Header() {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/industries"
                 onClick={() => setActiveNav('#industries')}
@@ -75,7 +75,7 @@ function Header() {
                 <i className="uil uil-globe nav_icon" />
                 Industries
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/services"

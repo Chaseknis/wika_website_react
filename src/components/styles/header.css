@@ -176,8 +176,8 @@ a {
 
   .nav_close {
     position: absolute;
-    right: 1.3rem;
-    bottom: 0.6rem;
+    right: 4%;
+    bottom: 1.2rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: #ffca7a;

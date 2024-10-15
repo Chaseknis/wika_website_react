@@ -9,7 +9,7 @@ function Banner() {
 
           {/* 100+ Meetings */}
           <div className="banner_text_container">
-            <h4 id="translators" className="banner_text_title">100+</h4>
+            <h3 id="translators" className="banner_text_title">100+</h3>
             <div className="banner_details">
               <h2 id="database" className="banner_text_subtitle">Conferences</h2>
               <p className="banner_description">Passion and dedication</p>
@@ -18,7 +18,7 @@ function Banner() {
 
           {/* 100% Accuracy */}
           <div className="banner_text_container">
-            <h4 id="accuracy" className="banner_text_title">100%</h4>
+            <h3 id="accuracy" className="banner_text_title">100%</h3>
             <div className="banner_details">
               <h2 id="rate" className="banner_text_subtitle">Accuracy</h2>
               <p className="banner_description">Years of Experience</p>
@@ -27,7 +27,7 @@ function Banner() {
 
           {/* 150+ Languages */}
           <div className="banner_text_container">
-            <h4 id="languages" className="banner_text_title">150+</h4>
+            <h3 id="languages" className="banner_text_title">150+</h3>
             <div className="banner_details">
               <h2 id="lnggs" className="banner_text_subtitle">Languages</h2>
               <p className="banner_description">We see the clear vision</p>
@@ -35,7 +35,7 @@ function Banner() {
           </div>
 
           <div className="banner_text_container">
-            <h4 id="languages" className="banner_text_title">1000+</h4>
+            <h3 id="languages" className="banner_text_title">1000+</h3>
             <div className="banner_details">
               <h2 id="lnggs" className="banner_text_subtitle">Database of Translators</h2>
               <p className="banner_description">Global Presence</p>

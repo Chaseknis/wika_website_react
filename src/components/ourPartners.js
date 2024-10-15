@@ -43,40 +43,40 @@ function OurPartners() {
         className="our-partners-grid"
       >
         <div className="partner-item">
-          <img src={PaxforPeace} alt="Guaranty Trust Bank" className="partner-logo" />
+          <img src={PaxforPeace} alt="Guaranty Trust Bank" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={mPharma} alt="mPharma Rwanda" className="partner-logo" />
+          <img src={mPharma} alt="mPharma Rwanda" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={HIVOS} alt="HIVOS International" className="partner-logo" />
+          <img src={HIVOS} alt="HIVOS International" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={care} alt="CARE Rwanda" className="partner-logo" />
+          <img src={care} alt="CARE Rwanda" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={GTBank} alt="Guaranty Trust Bank" className="partner-logo" />
+          <img src={GTBank} alt="Guaranty Trust Bank" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={Ishyo} alt="Ishyo Art Center" className="partner-logo" />
+          <img src={Ishyo} alt="Ishyo Art Center" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={technisup} alt="Technisup Rwanda LTD" className="partner-logo" />
+          <img src={technisup} alt="Technisup Rwanda LTD" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={OryxEnergies} alt="ORYX Energies Rwanda" className="partner-logo" />
+          <img src={OryxEnergies} alt="ORYX Energies Rwanda" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={SmartAfrica} alt="Smart Africa" className="partner-logo" />
+          <img src={SmartAfrica} alt="Smart Africa" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={BurkinaFaso} alt="Burkina Faso" className="partner-logo" />
+          <img src={BurkinaFaso} alt="Burkina Faso" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={Rwanda} alt="Rwanda Government" className="partner-logo" />
+          <img src={Rwanda} alt="Rwanda Government" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={Irembo} alt="Irembo" className="partner-logo" />
+          <img src={Irembo} alt="Irembo" loading="lazy" className="partner-logo" />
         </div>
       </div>
     </div>

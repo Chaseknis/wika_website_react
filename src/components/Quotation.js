@@ -4,6 +4,7 @@ import 'react-phone-input-2/lib/style.css';
 import Select from 'react-select'; // Ensure you import Select from react-select
 import countryList from 'react-select-country-list'; // Import country list from react-select-country-list
 import './styles/quotation.css';
+import ContactDetails from './contactDetails';
 
 function Quotation() {
   const [formData, setFormData] = useState({
@@ -129,12 +130,7 @@ function Quotation() {
             high-quality services to our clients swiftly and efficiently.
           </p>
         </div>
-        <p className="contact_second_paragraph">
-          Wika Translate serves as a hub for language experts from across the globe,
-          boasting a network of over 800 translators and interpreters. With this extensive
-          pool of talent, we possess the expertise and capability to consistently
-          deliver high-quality services to our clients swiftly and efficiently.
-        </p>
+        <ContactDetails />
       </div>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}

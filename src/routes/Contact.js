@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles/contact.css';
 // import { useForm, ValidationError } from '@formspree/react';
 import Quotation from '../components/Quotation';
+import ContactDetails from '../components/contactDetails';
 
 function Contact() {
   const [showContactForm, setShowContactForm] = useState(true); // Default is Contact form
@@ -34,12 +35,9 @@ function Contact() {
                   high-quality services to our clients swiftly and efficiently.
                 </p>
               </div>
-              <p className="contact_second_paragraph">
-                Wika Translate serves as a hub for language experts from across the globe,
-                boasting a network of over 800 translators and interpreters. With this extensive
-                pool of talent, we possess the expertise and capability to consistently
-                deliver high-quality services to our clients swiftly and efficiently.
-              </p>
+
+              <ContactDetails />
+
             </div>
             <form id="form" action="https://formspree.io/f/xjvdgezn" method="POST" className="contact-form">
               <input type="text" name="_honey" style={{ display: 'none' }} />

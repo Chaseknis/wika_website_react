@@ -13,6 +13,7 @@ function Footer() {
                 src={favicon}
                 alt="Wika Translate Logo"
                 className="footer_logo"
+                loading="lazy"
               />
             </a>
             <p className="brand-description">

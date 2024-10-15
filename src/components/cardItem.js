@@ -1,17 +1,17 @@
 import React from 'react';
 import './styles/cardItem.css';
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/christopher-gower-vjMgqUkS8q8-unsplash.jpg';
-import image3 from '../assets/image5.JPG';
+import LazyLoad from 'react-lazyload'; // Import LazyLoad
 
 function CardItems() {
   return (
     <div className="card_wrapper">
       <div className="items_card_container">
         <div className="items_card_wrapper">
-          <div className="image_wrapper">
-            <img src={image1} alt="Simultaneous Interpretation Services" />
-          </div>
+          <LazyLoad height={120} offset={100} placeholder={<div style={{ height: '20vh' }}>Loading...</div>}>
+            <div className="card_item_image_wrapper image_wrapper_one">
+              <div className="image_card_item image_wrapper_one" />
+            </div>
+          </LazyLoad>
 
           <div className="card_description_wrapper">
             <h2 className="card_title">Interpretation Equipment Rental</h2>
@@ -24,9 +24,11 @@ function CardItems() {
       </div>
       <div className="items_card_container">
         <div className="items_card_wrapper">
-          <div className="image_wrapper">
-            <img src={image3} alt="Simultaneous Interpretation Services" />
-          </div>
+          <LazyLoad height={120} offset={100} placeholder={<div style={{ height: '20vh' }}>Loading...</div>}>
+            <div className="card_item_image_wrapper image_wrapper_two">
+              <div className="image_card_item image_wrapper_two" />
+            </div>
+          </LazyLoad>
 
           <div className="card_description_wrapper">
             <h2 className="card_title">Simultaneous Interpretation Services</h2>
@@ -39,9 +41,11 @@ function CardItems() {
       </div>
       <div className="items_card_container">
         <div className="items_card_wrapper">
-          <div className="image_wrapper">
-            <img src={image2} alt="Simultaneous Interpretation Services" />
-          </div>
+          <LazyLoad height={120} offset={100} placeholder={<div style={{ height: '20vh' }}>Loading...</div>}>
+            <div className="card_item_image_wrapper image_wrapper_three">
+              <div className="image_card_item image_wrapper_three" />
+            </div>
+          </LazyLoad>
 
           <div className="card_description_wrapper">
             <h2 className="card_title">Certified Translation Services</h2>

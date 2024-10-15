@@ -42,7 +42,7 @@ function Services() {
             <div className="services_row">
               <div className="services_icon">1</div>
               <div className="services_description">
-                <h4>Translation</h4>
+                <h3>Translation</h3>
                 <p>
                   We offer professional translation services in 100+ languages in Legal,
                   Technical, Science, Agriculture, and Business Fields, etc.
@@ -56,7 +56,7 @@ function Services() {
             <div className="services_row">
               <div className="services_icon">2</div>
               <div className="services_description">
-                <h4>Interpretation</h4>
+                <h3>Interpretation</h3>
                 <p>
                   Simultaneous and Consecutive interpreting, Hiring interpretation equipment
                   and Escorting Interpretation.
@@ -70,7 +70,7 @@ function Services() {
             <div className="services_row">
               <div className="services_icon">3</div>
               <div className="services_description">
-                <h4>Subtitling</h4>
+                <h3>Subtitling</h3>
                 <p>
                   Translating spoken dialogue From Transcripts, screenplay,
                   commentary in films and television programs, Video games into written text
@@ -86,7 +86,7 @@ function Services() {
             <div className="services_row">
               <div className="services_icon">4</div>
               <div className="services_description">
-                <h4>Transcription</h4>
+                <h3>Transcription</h3>
                 <p>
                   We provide transcription services for videos or audio-recordings of
                   any length or any language.
@@ -100,7 +100,7 @@ function Services() {
             <div className="services_row">
               <div className="services_icon">5</div>
               <div className="services_description">
-                <h4>Localization</h4>
+                <h3>Localization</h3>
                 <p>
                   We address cultural and non-textual components as well as linguistic
                   issues when adapting a product or service for another country or locale.

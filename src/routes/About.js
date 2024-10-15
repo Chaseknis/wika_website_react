@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/about.css';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import image3 from '../assets/image3.jpg';
+import image3 from '../assets/image3.webp';
 import Carousel from '../components/cardItem';
 
 function About() {

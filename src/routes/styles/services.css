@@ -135,28 +135,28 @@
 }
 
 .services_card[for="c2"] {
-  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4635.jpeg);
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4635.webp);
   object-fit: cover;
   background-position: center;
   background-size: cover;
 }
 
 .services_card[for="c3"] {
-  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4630.jpeg);
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4630.webp);
   object-fit: cover;
   background-position: center;
   background-size: cover;
 }
 
 .services_card[for="c4"] {
-  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4925.JPG);
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_4925.webp);
   object-fit: cover;
   background-position: center;
   background-size: cover;
 }
 
 .services_card[for="c5"] {
-  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_6263.jpeg);
+  background: linear-gradient(rgba(56, 52, 41, 0.2), rgba(56, 52, 41, 0.6)), url(/src/assets/IMG_6263.webp);
   object-fit: cover;
   background-position: center;
   background-size: cover;

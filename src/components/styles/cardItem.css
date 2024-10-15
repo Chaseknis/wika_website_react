@@ -39,7 +39,7 @@
 .image_card_item {
   width: 300px;
   height: 20vh;
-  object-fit:contain;
+  object-fit: contain;
   background-position: center;
   background-size: cover;
 }
@@ -79,44 +79,41 @@
 
 @media screen and (min-width: 576px) {
   .items_card_wrapper {
-    width: 350px;;
+    width: 350px;
   }
 
   .image_card_item {
     width: 350px;
     height: 20vh;
-    object-fit:contain;
+    object-fit: contain;
     background-position: center;
     background-size: cover;
   }
-
 }
 
 @media screen and (min-width: 768px) {
   .items_card_wrapper {
-    width: 650px;;
+    width: 650px;
   }
 
   .image_card_item {
     width: 650px;
     height: 30vh;
-    object-fit:contain;
+    object-fit: contain;
     background-position: center;
     background-size: cover;
   }
-
 }
 
 @media (min-width: 992px) {
-
   .items_card_wrapper {
-    width: 350px;;
+    width: 350px;
   }
 
   .image_card_item {
     width: 350px;
     height: 15vh;
-    object-fit:contain;
+    object-fit: contain;
     background-position: center;
     background-size: cover;
   }

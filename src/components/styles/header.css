@@ -45,6 +45,7 @@ nav {
   flex-direction: row;
   justify-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .header_contact_button {

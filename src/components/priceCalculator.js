@@ -3,6 +3,7 @@ import './styles/priceCalculator.css';
 import mammoth from 'mammoth'; // For .docx files
 import * as pdfjsLib from 'pdfjs-dist/build/pdf'; // For PDFs
 import emailjs from 'emailjs-com'; // Import EmailJS
+import languages from './logic/languages';
 
 // Manually specify the PDF.js worker path
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
@@ -14,25 +15,6 @@ function PriceCalculator() {
   const [wordCount, setWordCount] = useState(0);
   const [volume, setVolume] = useState('');
   const [notification, setNotification] = useState(''); // State for notifications
-
-  // Language List
-  const languages = [
-    'English', 'French', 'Kinyarwanda', 'Arabic', 'Spanish', 'German', 'Italian',
-    'Swahili', 'Portuguese', 'Chinese', 'Japanese', 'Russian', 'Hindi', 'Bengali',
-    'Urdu', 'Persian', 'Turkish', 'Thai', 'Vietnamese', 'Korean', 'Polish',
-    'Dutch', 'Greek', 'Hebrew', 'Czech', 'Hungarian', 'Romanian', 'Serbian',
-    'Croatian', 'Malay', 'Filipino', 'Tamil', 'Telugu', 'Punjabi', 'Indonesian',
-    'Danish', 'Swedish', 'Norwegian', 'Finnish', 'Icelandic', 'Afrikaans',
-    'Amharic', 'Burmese', 'Bulgarian', 'Catalan', 'Cebuano', 'Chichewa', 'Dzongkha',
-    'Estonian', 'Fijian', 'Finnish', 'Georgian', 'Gujarati', 'Haitian Creole',
-    'Hausa', 'Irish', 'Javanese', 'Kannada', 'Kazakh', 'Khmer', 'Kurdish',
-    'Kyrgyz', 'Lao', 'Latvian', 'Lithuanian', 'Luxembourgish', 'Macedonian',
-    'Malagasy', 'Maltese', 'Mongolian', 'Nepali', 'Pashto', 'Samoan', 'Shona',
-    'Sinhala', 'Slovak', 'Slovenian', 'Somali', 'Sundanese', 'Tajik', 'Tatar',
-    'Tigrinya', 'Tongan', 'Turkmen', 'Ukrainian', 'Uzbek', 'Wolof', 'Xhosa',
-    'Yoruba', 'Zulu', 'Basque', 'Galician', 'Welsh', 'Scots Gaelic', 'Maori',
-    'Inuktitut', 'Quechua', 'Aymara', 'Tswana', 'Faroese', 'Guarani', 'Kirundi',
-  ];
 
   const handleSourceLanguageChange = (e) => setSourceLanguage(e.target.value);
   const handleTargetLanguageChange = (e) => setTargetLanguage(e.target.value);

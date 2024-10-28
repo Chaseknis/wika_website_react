@@ -55,7 +55,7 @@
 }
 
 .card_description_wrapper p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #ffca7a;
   padding-bottom: 1rem;
 }
@@ -124,7 +124,7 @@
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    top: 111%;
+    top: 112.5%;
     padding: 0 5%;
     left: 50%;
     transform: translate(-50%, -50%);

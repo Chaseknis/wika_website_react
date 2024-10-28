@@ -52,6 +52,10 @@ nav {
   font-size: 10px;
 }
 
+.contact_card {
+  cursor: pointer;
+}
+
 .contact_card_icon {
   color: #ffca7a;
   font-size: 12px;

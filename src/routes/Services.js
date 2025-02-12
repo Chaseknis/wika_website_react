@@ -185,7 +185,7 @@ function Services() {
               <a href="#home">
                 <img
                   src={favicon}
-                  alt="Wika Translate Logo"
+                  alt="Wika Translate - Professional Translation and Interpretation Services"
                   className="footer_logo"
                   loading="lazy"
                 />

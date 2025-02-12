@@ -2,6 +2,7 @@
   width: 100%;
   overflow: hidden;
   background: none; /* foggyGrey equivalent */
+  padding: 0 5%;
 }
 
 .our-partners-header {

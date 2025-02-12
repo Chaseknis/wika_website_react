@@ -43,8 +43,8 @@ function Translation() {
   }, []);
   const aboutTitles = [
     ['Certified', ' Translation', ' Services'],
-    ['Simultaneous', ' Interpretation', ' Solutions'],
-    ['Interpretation', ' Equipment', ' Rentals'],
+    ['Accurate', ' Legal', ' Translations'],
+    ['Precision in', ' Technical', ' Translations'],
   ];
 
   return (
@@ -57,7 +57,7 @@ function Translation() {
         <div className="about_main_title_wrapper">
           <div className="about_best_ad">
             <h2>
-              Our Services
+              Translation
               <hr />
             </h2>
           </div>
@@ -75,14 +75,12 @@ function Translation() {
           </div>
           <div className="about_main_title_paragraph_wrapper">
             <p className="about_main_title_paragraph">
-              At Wika Translate, we offer a comprehensive range of language services designed
-              to meet the diverse needs of our clients. From certified translations and
-              simultaneous interpretation to interpretation equipment rentals, our solutions
-              are tailored to ensure seamless communication in any setting. Whether you’re
-              organizing an international conference, need accurate document translations,
-              or require professional interpreters, our team of experts is dedicated to
-              delivering precision, professionalism, and cultural fluency to help you connect
-              with the world effortlessly.
+              Wika Translate provides high-quality translation services designed to ensure
+              accuracy, cultural relevance, and professionalism. Whether you need certified
+              translations for legal documents, business contracts, technical manuals, or personal
+              records, our expert linguists deliver precise and reliable results. With a
+              commitment to linguistic excellence and industry expertise, we help businesses and
+              individuals navigate multilingual communication effortlessly.
             </p>
           </div>
         </div>
@@ -162,7 +160,7 @@ function Translation() {
               <a href="#home">
                 <img
                   src={favicon}
-                  alt="Wika Translate Logo"
+                  alt="Wika Translate - Professional Translation and Interpretation Services"
                   className="footer_logo"
                   loading="lazy"
                 />

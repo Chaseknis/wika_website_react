@@ -106,7 +106,7 @@ function Home() {
                   accurate translation and interpretation solutions through advanced technology
                   and expert linguists.
                 </p>
-                <Link to="/contact">
+                <Link to="/contact/quotation">
                   <button className="quotation_button button" type="button">
                     Get a quick Quotation
                   </button>

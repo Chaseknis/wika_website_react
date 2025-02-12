@@ -12,6 +12,7 @@ import Contact from './routes/Contact';
 import Footer from './routes/footer';
 import Header from './components/Header';
 import ScrollUp from './components/scrollUp';
+import Quotation from './components/Quotation';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -114,7 +115,9 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/Translation" element={<Translation />} />
         <Route path="/FAQ" element={<FAQ />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />}>
+          <Route path="quotation" element={<Quotation />} />
+        </Route>
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </>

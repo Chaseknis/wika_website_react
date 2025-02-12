@@ -238,7 +238,7 @@ function Quotation() {
           <input
             type="file"
             name="file"
-            className="input"
+            className="input file_upload"
             onChange={handleFileChange}
           />
         </div>

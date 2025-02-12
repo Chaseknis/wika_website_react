@@ -130,31 +130,48 @@ function PriceCalculator() {
       </h2>
 
       {/* Source Language Selection */}
-      <select id="sourceLanguage" value={sourceLanguage} onChange={handleSourceLanguageChange}>
-        {languages.map((lang) => (
-          <option key={lang} value={lang}>{lang}</option>
-        ))}
-      </select>
+      <label htmlFor="sourceLanguage">
+        <select id="sourceLanguage" value={sourceLanguage} onChange={handleSourceLanguageChange}>
+          {languages.map((lang) => (
+            <option key={lang} value={lang}>{lang}</option>
+          ))}
+        </select>
+      </label>
 
       {/* Target Language Selection */}
-      <select id="targetLanguage" value={targetLanguage} onChange={handleTargetLanguageChange}>
-        {languages.map((lang) => (
-          <option key={lang} value={lang}>{lang}</option>
-        ))}
-      </select>
+      <label htmlFor="targetLanguage">
+        <select id="targetLanguage" value={targetLanguage} onChange={handleTargetLanguageChange}>
+          {languages.map((lang) => (
+            <option key={lang} value={lang}>{lang}</option>
+          ))}
+        </select>
+      </label>
 
       {/* Email Input */}
-      <input
-        type="email"
-        id="emailInput"
-        value={email}
-        onChange={handleEmailChange}
-        placeholder="Enter your email"
-        required
-      />
+      <label htmlFor="emailInput" className="hidden_label">
+        Email Address:
+        <input
+          type="email"
+          id="emailInput"
+          className="email_input"
+          value={email}
+          onChange={handleEmailChange}
+          placeholder="Enter your email"
+          required
+        />
+      </label>
 
       {/* File Upload */}
-      <input type="file" className="file_upload" id="fileUpload" onChange={handleFileUpload} accept=".pdf, .docx, .txt" />
+      <label htmlFor="fileUpload" className="hidden_label">
+        Upload File
+        <input
+          type="file"
+          className="file_upload"
+          id="fileUpload"
+          onChange={handleFileUpload}
+          accept=".pdf, .docx, .txt"
+        />
+      </label>
 
       {/* Word Count Display */}
       {wordCount > 0 && (

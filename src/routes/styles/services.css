@@ -5,6 +5,16 @@
   overflow: hidden;
 }
 
+.services_page_content_section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.services_page_content_wrapper {
+  padding: 5%;
+  background-color: rgba(211, 204, 184, 0.9);
+}
+
 .header_wrapper {
   display: flex;
   flex-direction: column;

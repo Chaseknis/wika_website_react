@@ -1,8 +1,15 @@
 import './app.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import MainLayout from './components/MainLayout';
+// import MainLayout from './components/MainLayout';
+import Home from './routes/Home';
+import About from './routes/About';
+import Services from './routes/Services';
+import Translation from './routes/Translation';
+import FAQ from './routes/FAQ';
+import Contact from './routes/Contact';
+import Footer from './routes/footer';
 import Header from './components/Header';
 import ScrollUp from './components/scrollUp';
 
@@ -100,7 +107,16 @@ function App() {
       <ScrollToTop />
       <ScrollUp />
       <Header />
-      <MainLayout />
+      {/* <MainLayout /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Translation" element={<Translation />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
     </>
   );
 }

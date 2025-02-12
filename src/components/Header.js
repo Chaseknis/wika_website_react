@@ -41,20 +41,20 @@ function Header() {
       </div>
       )}
       <nav>
-        <a href="#home" className="logo" aria-label="logo" onClick={() => setActiveNav('#home')}>
+        <Link to="/" className="logo" aria-label="logo" onClick={() => setActiveNav('#home')}>
           <img src={favicon} alt="logo" />
-        </a>
+        </Link>
         <div className={toggle ? 'nav_menu show_menu' : 'nav_menu'}>
           <ul>
             <li>
-              <a
-                href="#home"
+              <Link
+                to="/"
                 onClick={() => setActiveNav('#home')}
                 className={activeNav === '#home' ? 'nav_link active_link' : 'nav_link'}
               >
                 <i className="uil uil-estate nav_icon" />
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <Link

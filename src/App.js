@@ -88,7 +88,7 @@ function App() {
             "sameAs": [
               "https://www.facebook.com/profile.php?id=100076180103188",
               "https://www.twitter.com/wikatranslate",
-              "https://www.linkedin.com/company/81655771"
+              "https://www.linkedin.com/company/81655771",
               "https://www.instagram.com/wikatranslate"
             ],
             "contactPoint": {

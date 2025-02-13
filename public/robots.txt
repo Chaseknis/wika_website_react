@@ -4,4 +4,15 @@ Disallow: /checkout/
 Disallow: /cart/
 Allow: /
 
-Sitemap: https://wikatranslate.com/sitemap.xml
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+Sitemap: https://wikatranslate.net/sitemap.xml
+
+Crawl-delay: 10

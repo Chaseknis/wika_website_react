@@ -43,16 +43,11 @@ function About() {
             </h2>
           </div>
           <div className="about_main_title">
-            {aboutTitles.map((title, index) => (
-              <h2
-                key={title.join('-')}
-                className={`title ${activeIndex === index ? 'active' : 'hidden'}`}
-              >
-                <span className="stroke_text">{title[0]}</span>
-                <span>{title[1]}</span>
-                <span>{title[2]}</span>
-              </h2>
-            ))}
+            <h1 className="title">
+              <span className="stroke_text">{aboutTitles[activeIndex][0]}</span>
+              <span>{aboutTitles[activeIndex][1]}</span>
+              <span>{aboutTitles[activeIndex][2]}</span>
+            </h1>
           </div>
           <div className="about_main_title_paragraph_wrapper">
             <p className="about_main_title_paragraph">

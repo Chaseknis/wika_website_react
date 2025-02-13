@@ -88,17 +88,16 @@ function Home() {
                   Translate
                 </span>
               </div>
+              <h2 className="home_subtitle">
+                Rwanda&apos;s Most Trusted Translation & Interpretation Services Provider.
+              </h2>
+              {/* ✅ Optimized SEO-friendly <h1> */}
               <div className="home_title">
-                {titles.map((title, index) => (
-                  <h1
-                    key={title.join('-')}
-                    className={`title ${activeIndex === index ? 'active' : 'hidden'}`}
-                  >
-                    <span className="stroke_text">{title[0]}</span>
-                    <span>{title[1]}</span>
-                    <span>{title[2]}</span>
-                  </h1>
-                ))}
+                <h1 className="title">
+                  <span className="stroke_text">{titles[activeIndex][0]}</span>
+                  <span>{titles[activeIndex][1]}</span>
+                  <span>{titles[activeIndex][2]}</span>
+                </h1>
               </div>
               <div>
                 <p className="home_paragraph">

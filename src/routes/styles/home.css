@@ -30,12 +30,6 @@
   z-index: 0; /* Ensure this is behind text */
 }
 
-/* .home_container {
-  display: grid;
-  grid-column: auto;
-  gap: 4rem;
-} */
-
 .home_wrapper {
   width: 100%;
   position: relative; /* Make sure this is positioned relative for z-index to work */
@@ -105,17 +99,15 @@ h1 {
   width: 100%;
 }
 
-.title {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.title.active {
-  opacity: 1;
-}
-
-.title.hidden {
-  display: none;
+.home_subtitle {
+  width: 100%;
+  color: #b11810;
+  font-style: italic;
+  font-size: 14px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #ffca7a;
 }
 
 .home_paragraph {
@@ -191,7 +183,7 @@ h1 {
 
   .home_wrapper {
     flex-direction: row;
-    padding-top: 15%;
+    padding-top: 14%;
   }
 
   .half_one_wrapper {
@@ -213,7 +205,12 @@ h1 {
 
   .home_title {
     font-size: 3.2rem;
-    padding-top: 10%;
+  }
+
+  .home_subtitle {
+    width: 70%;
+    font-size: 18px;
+    margin-top: 2rem;
   }
 
   .home_paragraph {

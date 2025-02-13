@@ -91,19 +91,6 @@ h2 {
   width: 100%;
 }
 
-.title {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.title.active {
-  opacity: 1;
-}
-
-.title.hidden {
-  display: none;
-}
-
 .about_main_title_paragraph_wrapper {
   display: flex;
   align-items: center;

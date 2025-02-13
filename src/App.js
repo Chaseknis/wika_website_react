@@ -84,7 +84,7 @@ function App() {
               "@type": "LocalBusiness",
               "name": "Wika Translate",
               "url": "https://www.wikatranslate.net/",
-              "logo": "https://www.wikatranslate.net/images/logo.png",
+              "logo": "https://www.wikatranslate.net/images/logo_wika_translate.png",
               "image": "https://www.wikatranslate.net/images/office.jpg",
               "description": "Wika Translate is a trusted translation and interpretation service provider in Rwanda, offering high-quality language solutions for individuals and businesses.",
               "address": {

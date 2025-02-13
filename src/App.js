@@ -79,27 +79,47 @@ function App() {
         {/* Structured Data */}
         <script type="application/ld+json">
           {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Wika Translate",
-            "url": "https://www.wikatranslate.net/",
-            "logo": "https://www.wikatranslate.net/images/logo.png",
-            "sameAs": [
-              "https://www.facebook.com/profile.php?id=100076180103188",
-              "https://www.twitter.com/wikatranslate",
-              "https://www.linkedin.com/company/81655771",
-              "https://www.instagram.com/wikatranslate"
-            ],
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+250788933063",
-              "contactType": "Customer Service",
-              "areaServed": "RW",
-              "availableLanguage": "English, French, Kinyarwanda"
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Wika Translate",
+              "url": "https://www.wikatranslate.net/",
+              "logo": "https://www.wikatranslate.net/images/logo.png",
+              "image": "https://www.wikatranslate.net/images/office.jpg",
+              "description": "Wika Translate is a trusted translation and interpretation service provider in Rwanda, offering high-quality language solutions for individuals and businesses.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Makuza Peace Plaza, KN 84 St, Kigali, Rwanda",
+                "addressLocality": "Kigali",
+                "addressCountry": "RW",
+                "postalCode": "250"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "-1.946463734749799",
+                "longitude": "30.05945716766021"
+              },
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=100076180103188",
+                "https://www.twitter.com/wikatranslate",
+                "https://www.linkedin.com/company/81655771",
+                "https://www.instagram.com/wikatranslate"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+250788933063",
+                "contactType": "Customer Service",
+                "areaServed": "RW",
+                "availableLanguage": ["English", "French", "Kinyarwanda"]
+              },
+              "openingHours": ["Mo-Su 00:00-23:59"],
+              "priceRange": "$",
+              "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "Rwanda"
+              }
             }
-          }
-        `}
+          `}
         </script>
 
         {/* Author */}

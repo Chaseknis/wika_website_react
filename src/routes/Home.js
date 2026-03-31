@@ -17,6 +17,7 @@ import FAQItem from '../components/logic/FAQItem';
 import Quotation from '../components/Quotation';
 import ContactDetails from '../components/contactDetails';
 import favicon from '../assets/new_logo.png';
+import blogContent from '../components/blogContent';
 
 function Home() {
   const videoRef = useRef(null);
@@ -162,13 +163,23 @@ function Home() {
                   <span>10,000+</span>
                   <p>Clients Served</p>
                 </div>
+                <div>
+                  <a target="_blank" href="https://www.goodfirms.co/company/wika-translate" rel="noreferrer">
+                    <img
+                      className="goodFirms"
+                      src="https://assets.goodfirms.co/badges/color-badge/translation-services-companies.svg"
+                      title="Top Translation Services Company"
+                      alt="Top Translation Services Company on GoodFirms"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
 
             <div className="about_image_container">
               <div className="about_image_wrapper">
                 <LazyLoad height={200} offset={100} placeholder={<div>Loading...</div>}>
-                  <img src={image3} alt="Wika Translate" style={{ width: '100%', height: 'auto' }} />
+                  <img src={image3} alt="Interpretation Company in Kigali" style={{ width: '100%', height: 'auto' }} />
                 </LazyLoad>
               </div>
             </div>
@@ -413,6 +424,16 @@ function Home() {
           </div>
         </div>
         <OurPartners />
+        <div className="blog-list">
+          <Link to="blog">View Blogs</Link>
+          {Object.keys(blogContent).map((id) => (
+            <div key={id} className="blog-preview">
+              <h3>{blogContent[id].title}</h3>
+              <p>{blogContent[id].metaDescription}</p>
+              <Link to={`/blog/${id}`}>{blogContent[id].anchorText}</Link>
+            </div>
+          ))}
+        </div>
       </section>
       <section className="contact" id="contact">
         <div className="toggle-buttons">
@@ -488,6 +509,14 @@ function Home() {
 
                   <a href="https://www.twitter.com/wikatranslate" className="socials_icon socials-3" target="_blank" aria-label="Twitter" rel="noreferrer">
                     <i className="uil uil-twitter" />
+                  </a>
+                  <a target="_blank" href="https://www.goodfirms.co/company/wika-translate" className="socials_icon" rel="noreferrer">
+                    <img
+                      className="goodFirmsLogo"
+                      src="https://assets.goodfirms.co/badges/icon/white-goodfirms-icon.svg"
+                      title="Top Translation Services Company"
+                      alt="Top Translation Services Company on GoodFirms"
+                    />
                   </a>
 
                   <a href="https://www.instagram.com/wikatranslate" className="socials_icon socials-3" target="_blank" aria-label="Instagram" rel="noreferrer">

@@ -95,6 +95,15 @@
   z-index: 2;
 }
 
+.goodFirms {
+  width: 60px;
+  padding-top: 40px;
+}
+
+.goodFirmsLogo {
+  width: 17px;
+}
+
 h1 {
   width: 100%;
 }
@@ -151,6 +160,11 @@ h1 {
   .home_title {
     width: 90%;
     font-size: 1.8rem;
+  }
+
+  .goodFirms {
+    width: 150px;
+    padding-top: 40px;
   }
 
   .home_paragraph {

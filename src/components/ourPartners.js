@@ -43,16 +43,16 @@ function OurPartners() {
         className="our-partners-grid"
       >
         <div className="partner-item">
-          <img src={PaxforPeace} alt="Guaranty Trust Bank" loading="lazy" className="partner-logo" />
+          <img src={PaxforPeace} alt="Translation Agency in Kigali" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={mPharma} alt="mPharma Rwanda" loading="lazy" className="partner-logo" />
+          <img src={mPharma} alt="Interpretation Company in Kigali" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
           <img src={HIVOS} alt="HIVOS International" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={care} alt="CARE Rwanda" loading="lazy" className="partner-logo" />
+          <img src={care} alt="Interpretation Company in Rwanda" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
           <img src={GTBank} alt="Guaranty Trust Bank" loading="lazy" className="partner-logo" />
@@ -70,13 +70,13 @@ function OurPartners() {
           <img src={SmartAfrica} alt="Smart Africa" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={BurkinaFaso} alt="Burkina Faso" loading="lazy" className="partner-logo" />
+          <img src={BurkinaFaso} alt="Translation Company in Kigali" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={Rwanda} alt="Rwanda Government" loading="lazy" className="partner-logo" />
+          <img src={Rwanda} alt="Translation Company in Rwanda" loading="lazy" className="partner-logo" />
         </div>
         <div className="partner-item">
-          <img src={Irembo} alt="Irembo" loading="lazy" className="partner-logo" />
+          <img src={Irembo} alt="Irembo Rwanda" loading="lazy" className="partner-logo" />
         </div>
       </div>
     </div>

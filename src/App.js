@@ -1,7 +1,11 @@
 import './app.css';
-import { useLocation, Routes, Route } from 'react-router-dom';
+import {
+  useLocation, Routes, Route, useParams,
+} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import DOMPurify from 'dompurify';
 // import MainLayout from './components/MainLayout';
 import Home from './routes/Home';
 import About from './routes/About';
@@ -13,6 +17,10 @@ import Footer from './routes/footer';
 import Header from './components/Header';
 import ScrollUp from './components/scrollUp';
 import Quotation from './components/Quotation';
+// import BlogPost from './components/BlogPost';
+import Blog from './routes/blog';
+import blogContent from './components/blogContent';
+import './components/styles/BlogPost.css';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,7 +50,7 @@ function App() {
         </title>
 
         {/* Enhanced Description */}
-        <meta name="description" content="Wika Translate is a leading and well-established translation agency, offering expert language solutions to businesses, individuals, and organizations in Kigali, Rwanda, and globally. Specializing in legal, technical, business, and certified translations, we deliver fast, accurate, and culturally relevant services across multiple languages. Trusted by global brands, Wika Translate ensures quality, confidentiality, and affordability, making us the preferred choice for professional translation and interpretation services." />
+        <meta name="description" content="Wika Translate is a leading and well-established translation Company in Rwanda, offering expert language solutions to businesses, individuals, and organizations in Kigali, and globally. Specializing in legal, technical, business, and certified translations, we deliver fast, accurate, and culturally relevant services across multiple languages. Trusted by global brands, Wika Translate ensures quality, confidentiality, and affordability, making us the preferred choice for professional translation and interpretation services." />
 
         {/* Expanded Keywords */}
         <meta name="keywords" content="professional translation services in rwanda, translation services in kigali, translation services in rwanda, legal translation services, technical translation services, business translation services, certified translation in rwanda, kinyarwanda translation, english translation, french translation, swahili translation services, arabic translation services, arabic translation services in rwanda, arabic translation services in kigali, arabic interpretation services, arabic interpretation services in rwanda, arabic interpretation services in kigali, german translation services, translation services in over 150 languages, rwanda interpreters for conferences, document translation in rwanda, simultaneous interpretation in kigali, simultaneous interpretation in rwanda, legal interpreters in rwanda, medical translation services, financial translation services, marketing translation services, website translation in rwanda, translation agency in east africa, language solutions in rwanda, language service provider in kigali, Arabic, translation for NGOs in rwanda, translation for businesses in rwanda, notarized translation services, conference interpretation services, professional translators for global languages, corporate translation solutions, multilingual translation services, international translation agency, french to kinyarwanda interpreters, portuguese translators, spanish translation services, italian translation services, portuguese to english translations, swahili interpreters, translation services for individuals and organizations, simultaneous interpretation equipment rental," />
@@ -59,7 +67,7 @@ function App() {
         {/* Open Graph Tags */}
         <meta property="og:site_name" content="Wika Translate" />
         <meta property="og:title" content="Professional Translation Services in Rwanda | Wika Translate" />
-        <meta property="og:description" content="Wika Translate provides specialized legal, technical, and business translation and interpretation services. Trusted by global companies and individuals alike." />
+        <meta property="og:description" content="Wika Translate provides specialized legal, technical, and business translation and interpretation services in Kigali, Rwanda. Trusted by global companies and individuals alike." />
         <meta property="og:url" content="https://www.wikatranslate.net/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.wikatranslate.net/images/og-image.jpg" />
@@ -139,9 +147,57 @@ function App() {
           <Route path="quotation" element={<Quotation />} />
         </Route>
         <Route path="/footer" element={<Footer />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route
+          path="/blog/:id"
+          element={<BlogPostContent blogContent={blogContent} />}
+        />
       </Routes>
     </>
   );
 }
+
+function BlogPostContent({ blogContent }) {
+  const { id } = useParams();
+  const content = blogContent[id];
+
+  if (!content) return <p className="blog-not-found">Blog post not found!</p>;
+
+  return (
+    <div className="blog-container">
+      <Helmet>
+        <title>
+          {content.title}
+          {' '}
+          | Wika Translate
+        </title>
+        <meta name="description" content={content.metaDescription} />
+        <meta name="keywords" content={content.keywords} />
+      </Helmet>
+      <h1 className="blog-title">{content.title}</h1>
+      <div
+        className="blog-content"
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content.content) }}
+      />
+    </div>
+  );
+}
+
+BlogPostContent.propTypes = {
+  blogContent: PropTypes.shape({
+    1: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      metaDescription: PropTypes.string.isRequired,
+      keywords: PropTypes.string.isRequired,
+    }),
+    2: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      metaDescription: PropTypes.string.isRequired,
+      keywords: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
+};
 
 export default App;

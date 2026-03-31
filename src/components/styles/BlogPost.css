@@ -1,0 +1,38 @@
+.blog-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #b20000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.blog-content {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.blog-container p {
+  margin-bottom: 10px;
+}
+
+.blog-container h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-top: 20px;
+}
+
+.blog-not-found {
+  text-align: center;
+  font-size: 1.2rem;
+  color: red;
+  font-weight: bold;
+}

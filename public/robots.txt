@@ -1,3 +1,18 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /cart/
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+Sitemap: https://wikatranslate.net/sitemap.xml
+
+Crawl-delay: 10
